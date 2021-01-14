@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eds2cvnewstracker.MainMenuController">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Navigation">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleSearchButton" text="Search News" />
+                  <MenuItem fx:id="bookmarksMenuButton" disable="true" mnemonicParsing="false" onAction="#handleBookmarksButton" text="Bookmark" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleSettingsButton" text="Settings" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleAboutAlert" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Text layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="News Tracker" textAlignment="CENTER" underline="true" wrappingWidth="600.0">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Text>
+      <Button layoutX="230.0" layoutY="138.0" mnemonicParsing="false" onAction="#handleSearchButton" prefHeight="42.0" prefWidth="140.0" text="Search" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="bookmarksButton" disable="true" layoutX="230.0" layoutY="216.0" mnemonicParsing="false" onAction="#handleBookmarksButton" prefHeight="42.0" prefWidth="140.0" text="Bookmarks" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="230.0" layoutY="299.0" mnemonicParsing="false" onAction="#handleSettingsButton" prefHeight="42.0" prefWidth="140.0" text="Settings" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
